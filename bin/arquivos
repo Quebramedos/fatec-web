@@ -1,0 +1,149 @@
+
+
+
+module.exports = router;
+[
+  {
+    "_id": {
+      "$oid": "5ca6903729c5a6170c09c7a0"
+    },
+    "nome": "Contusão",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "5ca6904829c5a6170c09c7a1"
+    },
+    "nome": "Perfuração",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "5ca6905929c5a6170c09c7a2"
+    },
+    "nome": "Corte",
+    "__v": 0
+  }
+]
+[
+  {
+    "_id": {
+      "$oid": "5ca8ae18088bdb2098828673"
+    },
+    "nome": "Kit Primeiros SOS",
+    "descricao": "Bandagens, Agulhas, Linha e Pomada",
+    "custo": 50,
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "5ca8ae7b088bdb2098828674"
+    },
+    "nome": "Mochila de Viagem",
+    "descricao": "Possui Cantil, Tenda, Perdeneira,Panela pequena, Lanterna, corda",
+    "custo": 100,
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "5ca8ae9f088bdb2098828675"
+    },
+    "nome": "Provisões",
+    "descricao": "Suficiente para 10 Refeições",
+    "custo": 50,
+    "__v": 0
+  }
+]
+[
+  {
+    "_id": {
+      "$oid": "5ca8a744dfa1d01aec8c3745"
+    },
+    "nome": "Usar Armas Simples",
+    "descricao": "so pode empunhar armas de uma mão",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "5ca8a7b7dfa1d01aec8c3746"
+    },
+    "nome": "Rastreamento",
+    "descricao": "capaz de rastrear animais e pessoas.",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "5ca8a873dfa1d01aec8c3747"
+    },
+    "nome": "Furtar Bolsos",
+    "descricao": "pode efetuar pequenos furtos",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "5ca8a896dfa1d01aec8c3748"
+    },
+    "nome": "Usar armas complexas",
+    "descricao": "pode utilizar armas de duas mãos",
+    "__v": 0
+  }
+]
+[
+  {
+    "_id": {
+      "$oid": "5ca8a33de210961cf80eb9bd"
+    },
+    "nome": "Arco Composto",
+    "custo": 150,
+    "dano": 8,
+    "tipo": {
+      "$oid": "5ca6904829c5a6170c09c7a1"
+    },
+    "forca": 2,
+    "municao": 100,
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "5ca8a4e3c90c4c1c8811afd3"
+    },
+    "nome": "Besta de Mão",
+    "custo": 200,
+    "dano": 8,
+    "tipo": {
+      "$oid": "5ca6904829c5a6170c09c7a1"
+    },
+    "forca": 2,
+    "municao": 200,
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "5ca8a510c90c4c1c8811afd4"
+    },
+    "nome": "Arco de Guerra",
+    "custo": 200,
+    "dano": 10,
+    "tipo": {
+      "$oid": "5ca6904829c5a6170c09c7a1"
+    },
+    "forca": 3,
+    "municao": 100,
+    "__v": 0
+  }
+]
+/////////////////////////////habilidade
+{
+  "_id": {
+    "$oid": "5cb1e4d763e1ab1d442068ac"
+  },
+  "nome": "Acrobacia",
+  "classe": {
+    "$oid": "5cb1e0a21822bd228ccaed95"
+  },
+  "energia": 0,
+  "tipo": "Suporte",
+  "descricao": "pode saltar com precisão e cair sem se machucar",
+  "__v": 0
+}
+//-----------------------------------------------------
