@@ -6,16 +6,8 @@ modelo
 const mongoose = require('mongoose');
 module.exports = function () {
     const schema = mongoose.Schema({
-        envenenado: {
-            type: Boolean,
-            required: true
-        },
-        enfraquecido: {
-            type: Boolean,
-            required: true,
-        },
-        normal: {
-            type: Boolean,
+        nome: {
+            type: String,
             required: true
         }
     });

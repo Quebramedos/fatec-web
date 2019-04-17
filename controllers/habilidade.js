@@ -37,7 +37,6 @@ controller.listar = function (req, res) {
                 res.sendStatus(500).end();
             }
         );
-
 };
 
 controller.obterUm = function (req, res) {

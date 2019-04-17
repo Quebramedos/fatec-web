@@ -41,7 +41,7 @@ app.use('/dano', dano);
 app.use('/classe', classe);
 app.use('/status', status);
 app.use('/usuario', usuario);
-app.use('/armaFogo', armaFogo);
+app.use('/armafogo', armaFogo);
 app.use('/artefato', artefato);
 app.use('/habilidade', habilidade);
 app.use('/personagem', personagem);

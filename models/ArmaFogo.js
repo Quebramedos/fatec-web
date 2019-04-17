@@ -10,14 +10,14 @@ module.exports = function () {
             type: Number,
             required: true
         },
-        dano: {
+        danofisico: {
             type: Number,
             required: true
         },
         tipo: {
             type: mongoose.ObjectId,
-            ref: "Dano",
-            required: false
+            ref: 'Dano',
+            required: true
         },
         forca: {
             type: Number,
