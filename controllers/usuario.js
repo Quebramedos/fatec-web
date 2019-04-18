@@ -63,7 +63,7 @@ controller.atualizar = function (req, res) {
     //capturar o id dentro do corpo da requisiçao
     const id = req.body._id;
     //encontra o objeto indentificado pelo id e substitui o seu conteudo por req.body       
-   Usuario.findByIdAndUpdate({ _id: id }, req.body).exec().then(
+    Usuario.findOneAndUpdate({ _id: id }, req.body).exec().then(
         //callback do bem
         function (Usuario) {
             if (Usuario) {
@@ -83,7 +83,7 @@ controller.atualizar = function (req, res) {
 controller.excluir = function (req, res) {
     const id = req.params.id;
     //capturamos o id a partir da url do Cadastro
-   Usuario.findByIdAndDelete({ _id: id }).exec().then(
+    Usuario.findOneAndDelete({ _id: id }).exec().then(
         //callback do bem
         function (usuario) {
             if (usuario) {

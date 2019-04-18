@@ -30,9 +30,10 @@ controller.listar = function (req, res) {
         .populate('status')
         .populate({ path: 'classe', populate: { path: 'proficiencia' } })
         .populate({ path: 'habilidade', populate: { path: 'classe' } })
+        .populate({ path: 'habilidade', populate: { path: 'proficiencia' } })
         .exec().then(
             //callback do bem
-            function (Personagens) {//todos os veikculos do vetor 
+            function (Personagens) {//todos 
                 //REtorna o vetor encontrado
                 res.json(Personagens).end();
             },
@@ -89,7 +90,7 @@ controller.atualizar = function (req, res) {
 controller.excluir = function (req, res) {
     const id = req.params.id;
     //capturamos o id a partir da url do Status
-    Personagem.findByIdAndDelete({ _id: id }).exec().then(
+    Personagem.findOneAndDelete({ _id: id }).exec().then(
         //callback do bem
         function (personagem) {
             if (personagem) {
